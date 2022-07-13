@@ -46,6 +46,8 @@ pub enum WMIError {
     NullPointerResult,
     #[error("Unimplemeted array item in query")]
     UnimplementedArrayItem,
+    #[error("channel was closed")]
+    RcevError,
 }
 
 impl de::Error for WMIError {
